@@ -178,18 +178,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &160477395 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8010272199482389519, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,
-    type: 3}
-  m_PrefabInstance: {fileID: 608223910}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b830c8454601e34887c9f8d27df37e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &267791017
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,18 +434,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 160477395}
-        m_MethodName: ChangeMultiplier
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &567846284
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +478,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 120292440558609878, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,
+        type: 3}
+      propertyPath: m_Positions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8010272199482389506, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,
         type: 3}
       propertyPath: m_Name
@@ -574,6 +556,11 @@ PrefabInstance:
     - target: {fileID: 8010272199482389519, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,
         type: 3}
       propertyPath: isBeingWatched
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010272199482389519, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,
+        type: 3}
+      propertyPath: multiplier
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8010272200522341398, guid: 848e308ec3ba75d4989d5b7ca0bc2ae1,

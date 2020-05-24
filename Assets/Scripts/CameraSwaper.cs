@@ -17,7 +17,7 @@ public class CameraSwaper : MonoBehaviour
             camera.SetActive(false);
             camera.GetComponentInParent<BallControll>().DisableVisiability();
         }
-        index = 2;
+        index = 0;
         active = following[index];
         SetActive(active);
     }

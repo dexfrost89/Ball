@@ -123,7 +123,7 @@ public class BallControll : MonoBehaviour
         }
     }
 
-    private bool isBeingWatched;
+    private bool isBeingWatched = true;
 
     public void DisableVisiability()
     {
@@ -138,7 +138,7 @@ public class BallControll : MonoBehaviour
 
     private void Start()
     {
-
+        speed = 10;
         if (slider != null)
         {
             multiplier = slider.value;
@@ -160,17 +160,13 @@ public class BallControll : MonoBehaviour
 
     private void Update()
     {
-        if(!staying)
-        {
-            MoveToNextPoint();
-        }
-    }
-
-    public void ChangeMultiplier()
-    {
-        if (isBeingWatched)
+        if (isBeingWatched && slider != null)
         {
             multiplier = slider.value;
+        }
+        if (!staying)
+        {
+            MoveToNextPoint();
         }
     }
 }
